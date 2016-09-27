@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header();?>PAGE
     <!-- show post detail -->
     <div class="block-1 news-detail-block">
         <div class="container">

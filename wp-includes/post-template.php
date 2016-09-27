@@ -1151,9 +1151,7 @@ function wp_list_pages( $args = '' ) {
 		'authors' => '', 'sort_column' => 'menu_order, post_title',
 		'link_before' => '', 'link_after' => '', 'walker' => '',
 	);
-
 	$r = wp_parse_args( $args, $defaults );
-
 	$output = '';
 	$current_page = 0;
 
@@ -1189,9 +1187,7 @@ function wp_list_pages( $args = '' ) {
 				$current_page = $queried_object->ID;
 			}
 		}
-
 		$output .= walk_page_tree( $pages, $r['depth'], $current_page, $r );
-
 		if ( $r['title_li'] ) {
 			$output .= '</ul></li>';
 		}
@@ -1276,7 +1272,6 @@ function wp_page_menu( $args = array() ) {
 	$menu = '';
 
 	$list_args = $args;
-
 	// Show Home in the menu
 	if ( ! empty($args['show_home']) ) {
 		if ( true === $args['show_home'] || '1' === $args['show_home'] || 1 === $args['show_home'] )
@@ -1285,7 +1280,8 @@ function wp_page_menu( $args = array() ) {
 			$text = $args['show_home'];
 		$class = '';
 		if ( is_front_page() && !is_paged() )
-			$class = 'class="current_page_item"';
+		$class = 'class="current_page_item"';
+
 		$menu .= '<li ' . $class . '><a href="' . home_url( '/' ) . '">' . $args['link_before'] . $text . $args['link_after'] . '</a></li>';
 		// If the front page is a page, add it to the exclude list
 		if (get_option('show_on_front') == 'page') {

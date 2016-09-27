@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <div class="content">
+    <div class="content">ARCHIVE
         <section id="main-content">
             <div class="archive-title">
                 <h2>

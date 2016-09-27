@@ -129,17 +129,15 @@ if ( ! function_exists( 'fptonline_pagination' ) ) {
             return '';
         }
         ?>
-
-        <nav class="pagination" role="navigation">
         <?php if ( get_next_post_link() ) : ?>
-            <div class="prev"><?php next_posts_link( __('Older Posts', 'fptonline') ); ?></div>
+            <li><button type="button" class="prev-btn"><?php next_posts_link( __('Trang trước', 'fptonline') ); ?></button></li>
         <?php endif; ?>
 
         <?php if ( get_previous_post_link() ) : ?>
-            <div class="next"><?php previous_posts_link( __('Newer Posts', 'fptonline') ); ?></div>
+            </li><button type="button" class="next-btn"><?php previous_posts_link( __('Trang sau', 'fptonline') ); ?></button></li>
         <?php endif; ?>
 
-        </nav><?php
+        <?php
     }
 }
 

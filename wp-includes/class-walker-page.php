@@ -106,8 +106,8 @@ class Walker_Page extends Walker {
 			if ( $_current_page && in_array( $page->ID, $_current_page->ancestors ) ) {
 				$css_class[] = 'current_page_ancestor';
 			}
-			if ( $page->ID == $current_page ) {
-				$css_class[] = 'current_page_item';
+			if ( $page->ID == $current_page ) {// echo 'aaaaaaaaaa';
+				$css_class[] = 'active';
 			} elseif ( $_current_page && $page->ID == $_current_page->post_parent ) {
 				$css_class[] = 'current_page_parent';
 			}

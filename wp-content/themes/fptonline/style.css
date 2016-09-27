@@ -8,3 +8,14 @@
  * Tags: starter theme, framework theme, two-columns, customize
  * Textdomain: fptonline
  */
+/*.current_page_item {
+
+}
+nav .nav-menu li a {
+    color: #3a3a3a;
+    font-size: 1.143em;
+    line-height: 1.2;
+}
+nav .nav-menu li a:hover {
+    color: #0c4da2;
+}*/
