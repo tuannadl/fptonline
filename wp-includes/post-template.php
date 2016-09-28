@@ -1154,7 +1154,6 @@ function wp_list_pages( $args = '' ) {
 	$r = wp_parse_args( $args, $defaults );
 	$output = '';
 	$current_page = 0;
-
 	// sanitize, mostly to keep spaces out
 	$r['exclude'] = preg_replace( '/[^0-9,]/', '', $r['exclude'] );
 

@@ -4,34 +4,6 @@
  */
 ?>
 <?php get_header(); ?>
-<nav class="navbar-wrap-1">
-    <div class="container">
-        <div class="menu-active">
-            <a href="#" title="Trang chủ" class="wi-icon wi-icon-home"></a>
-            <a href="#" title="Giới Thiệu" class="menu-item">
-                Sản phẩm - Dịch vụ
-            </a>
-            <span class="arrow-bottom-menu"></span>
-        </div>
-        <ul class="nav-menu-1">
-            <!-- <li>
-              <a href="#" title="Giới Thiệu">Giới Thiệu</a>
-            </li> -->
-            <li class="active"><a href="#" title="Tổng quan">Tổng quan</a>
-            </li>
-            <li><a href="#" title="Tầm nhìn">Tầm nhìn</a>
-            </li>
-            <li><a href="#" title="Văn hóa">Văn hóa</a>
-            </li>
-            <li><a href="#" title="Điều lệ &amp; Ban Lãnh đạo Công ty ">Điều lệ & Ban Lãnh đạo Công ty </a>
-            </li>
-            <li><a href="#" title="Đối tác">Đối tác</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-</header>
-<main></main>
 <div class="block-1 product-block">
     <div class="container">
         <div class="product-block-1 border-2">

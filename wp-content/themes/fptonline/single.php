@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header();?>Single page
     <!-- show post detail -->
 <div class="block-1 news-detail-block">
     <div class="container">
@@ -17,10 +17,16 @@
 <?php endwhile;endif; ?>
             <div class="col-sm-4">
                 <div class="news-different">
-                    <?php get_sidebar(); ?>
+                    <?php get_sidebar('tintuc'); ?>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <?php get_footer();?>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.nav-menu').find('.page-item-44').addClass('active');
+    });
+    console.log('nguyen Anh Tuan');
+</script>

@@ -10,8 +10,6 @@
 <div class="col-sm-8">
     <div class="news-detail-inner news-detail-inner-1">
         <?php
-        //global $post;
-        //global $paged;
         $idObj = get_category_by_slug('tin-tuc');
         $this_id_cat = $idObj->term_id;
         $arg = array('posts_per_page' => 1, 'paged' => $paged, 'cat' => $this_id_cat,'order' => 'DESC','offset' => 0);
